@@ -1,0 +1,445 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: #fff;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img{
+    width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+@font-face {
+	font-family: 'AlegreyaSansSC-Regular';
+	src: url('../fonts/AlegreyaSansSC-Regular.woff2') format('woff2'), url('../fonts/AlegreyaSansSC-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AlegreyaSans-Light';
+	src: url('../fonts/AlegreyaSans-Light.woff2') format('woff2'), url('../fonts/AlegreyaSans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+.header__menu{
+    background-image: url(../img/menu-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1000;
+    
+
+}
+.header{
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:cover;
+    height: 100vh;
+    width: 100%;
+}
+.header__inner{
+    margin-right: auto;
+    margin-left: auto;
+}
+.menubox{
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'AlegreyaSansSC-Regular';
+}
+.menu__link{
+  display: flex;
+}
+
+.menu{
+    height: 100px;
+    padding: 38px 175px 38px 226px;
+
+    img{
+        width: 45px;
+        height: 25px; 
+    }
+    ul{
+        display: flex;
+    }
+    
+    li{
+
+        &:hover{
+            border-bottom: solid 2px;
+            border-image: linear-gradient(to right, #FF26BA , #7267C3);
+            -moz-border-image: -moz-linear-gradient(left, #FF26BA , #7267C3);
+            -webkit-border-image: -webkit-linear-gradient(left,#FF26BA , #7267C3);
+            border-image-slice: 1;
+        }
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+.header__content{
+    width: 450px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: 280px;
+    padding-top: 255px;
+    margin-bottom: 255px;
+    text-align: center;
+    h2{
+        font-family: 'AlegreyaSansSC-Regular';
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 60px;
+    }
+    ul{
+        font-family: 'AlegreyaSans-Light';
+        color: #FFFFFF;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    li{
+        margin-left: auto;
+        margin-right: auto;
+        width: 170px;
+        margin-bottom: 30px;
+
+
+        &:nth-child(odd){
+        border-bottom: solid 2px;
+        border-image: linear-gradient(to right, #1f1f1f, #7267C3);
+        -moz-border-image: -moz-linear-gradient(left, #1f1f1f , #7267C3);
+        -webkit-border-image: -webkit-linear-gradient(left,#1f1f1f , #7267C3);
+        border-image-slice: 1;
+        }
+        &:nth-child(2n){
+            border-bottom: solid 2px;
+            border-image: linear-gradient(to left, #FF26BA, #FF26BA00);
+            -moz-border-image: -moz-linear-gradient(right, #FF26BA , #FF26BA00);
+            -webkit-border-image: -webkit-linear-gradient(left,#FF26BA, #FF26BA00);
+            border-image-slice: 1;
+    }
+    }
+}
+.header-btn{
+    width: 300px;
+    height: 80px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+    background: linear-gradient(to left, #575757, #363636 );
+    font-family: 'AlegreyaSans-Light';
+    font-size: 24px;
+    line-height: 40px;
+    padding: auto 48px auto 48px;
+
+}
+
+.section__product{
+  background-image: url(/img/product-bg.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+.product__content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+.product__item{
+  width: 550px;
+  height: 200px;
+  background: linear-gradient(97.53deg, rgba(255, 255, 255, 0.019) 0%, rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(2px);
+  border: 1px solid #7267C3;
+  border-radius: 20px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  
+
+  
+  
+
+
+  &:hover{
+    button{
+      width: 150px;
+      height: 35px;
+      border: none;
+        span{
+          display: inline;
+        }
+    }
+  }
+
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+}
+
+.product__content-text{ 
+  padding: 20px 380px 20px 20px;
+  width: 150px;
+  height: 160px;
+  text-align: center;
+  font-family: 'AlegreyaSansSC-Regular';
+  h4{
+    margin-bottom: 100px;
+  }
+  button{
+    width: 35px;
+    height: 35px;
+    color: #7267C3;
+    font-weight: 800;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'AlegreyaSansSC-Regular';
+      
+    
+    span{
+      display: none;
+      color: #000;
+      font-family: 'AlegreyaSansSC-Regular';
+    }
+    
+    &:hover{
+      width: 150px;
+      height: 35px;
+      border: none;
+        span{
+          display: inline;
+        }
+    }
+  }
+}
+
+.recommendations{
+  background-color: #1F1F1F;
+  min-height: 85vh;
+}
+.rec__title{
+  text-align: center;
+  font-family: 'AlegreyaSansSC-Regular';
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.rec__product{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 55px;
+}
+.rec__item{
+  width: 300px;
+  height: 450px;
+  background: linear-gradient(156.04deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  margin-right: 150px;
+  border-radius: 30px;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  h4{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-family: 'AlegreyaSans-Light';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+  }
+
+}
+.product__img{
+  width: 250px;
+  height: 270px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 40px;
+
+}
+
+
+.basket-black{
+  width: 16px;
+  height: 18px;
+}
+
+.product__item-text{
+display: flex;
+justify-content: space-between;
+margin-right: 25px;
+margin-left: 25px;
+width: 250px;
+height: 35px;
+  p{
+    font-family: 'AlegreyaSans-Light';
+    width: 85px;
+    height: 29px; 
+    font-size: 24px;
+    line-height: 29px;
+  }
+  button{
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-family: 'AlegreyaSans-Light';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    padding: 8px 37px 26px;
+    white-space:nowrap;
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CATALOG
+.filters{
+  padding-top: 140px;
+  min-height: 100vh;
+  background-color: #1F1F1F;
+}
+.filters__title{
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  font-family: 'AlegreyaSansSC-Regular';
+}
+// .filters__section{
+
+// }
+.filters__section{
+  margin: 25px 207px 45px 207px ;
+  font-family: 'AlegreyaSans-Light';
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: space-between;
+
+    button{
+      width: 160px;
+      height: 50px;
+      text-align: center;
+      border: 1 solid #fff;
+      border-radius: 10px;
+      background: linear-gradient(50.53deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.1) 80%);
+      opacity: 0.7;
+      backdrop-filter: blur(25px);
+      cursor: pointer;
+      color: #fff;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 40px;
+      font-family: 'AlegreyaSans-Light';
+      letter-spacing: 0.1em;
+    }
+  }
+
+

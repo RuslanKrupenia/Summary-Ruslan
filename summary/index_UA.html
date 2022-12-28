@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>none</title>
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body >
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <nav class="menu">
+            <div class="menu__title">
+              <div class="menu__title-img">
+                <img id="generator"  src="images/logo.png" alt="">
+              </div>
+        </div>
+        <ul  class="menu__list">
+          <li class="menu__item"><a class="menu__link" title="Translate" href="index_EN.html">EN</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Головна</a></li>
+          <li class="menu__item"><a class="menu__link" href="#about-me">Про мене</a></li>
+          <li class="menu__item"><a class="menu__link" href="#portfolio">Портфоліо</a></li>
+          <li class="menu__item"><a class="menu__link" href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__content">
+      <div class="header__left">
+      <h1 class="header__title">
+        Привіт <br>
+        <span> Мене звати Руслан</span>
+      </h1>
+        <div class="header__text">
+          Займаюся веб-дизайном, front-end розробкою 7 місяців. Вам потрібен дизайн сайту, макет сайту, а може сайт під ключ? Тоді зв'яжіться зі мною
+        </div>
+      <a href="#contacts"><button class="button contact">
+        Зв'язатись
+      </button></a>
+    </div>
+    <div class="header__right">
+    <img class="header__human-img" src="images/human-img.png" alt="">
+    </div>
+  </div>
+  
+    </div>
+  </div>
+</header>
+<section class="anchor__about" id="about-me"></section>
+<section id="about-me" class="about circle_bg">
+<div class="container">
+   <div class="row">
+     <div class="section__left">
+       <div class="section__left-image1">
+         <img src="images/photo-top.jpg" alt="">
+       </div>
+       <div class="section__left-image2">
+         <img src="images/photo-bottom.jpg" alt="">
+       </div>
+     </div>
+     <div class="section__center">
+       <h2 class="section__title">
+         Про мене
+       </h2>
+       <div class="section__border">
+         <p>
+          Знову всім привіт! Отже, ви вже знаєте, що мене звати Руслан. Трохи про себе: студент, 19 років, живу в Києві. Чому саме програмування? Все елементарно - подобається, професія майбутнього, на даний момент я спеціалізуюся на веб-дизайні, front-end розробці, сайтах під ключ. Чому ви повинні обрати мене? До кожного замовлення підходжу з великою відповідальністю та любов'ю, продовжую розвиватися в цьому напрямку, працюю на якість, намагаючись зробити замовлення максимально швидко та якісно, ​​враховуючи всі побажання.</p>
+       </div>
+     </div>
+     <div class="section__right">
+       <img class="" src="images/photo-center.jpg" alt="" >
+     </div>
+   </div>
+</div>
+</div>
+</section>
+<section id="portfolio" class="portfolio">
+<div class="container__portfolio">
+  <h3 class="portfolio__title">
+    Portfolio
+  </h3>
+  <div class="portfolio__slider">
+      <div class="slider__content">
+        <div class="slider__content-item">
+      <img class="slider-img" src="./images/slider-img-1.png" alt="" >
+    </div>
+      <div class="slider__content-text">
+        <h4 class="slider__content-title">
+          Seven-Sistems
+        </h4>
+        <p class="slider__content-description">
+          Сайт-візитка для будівельної компанії. Дизайн робив сам. Контент вибирав замовник. </p>
+        <div class="slider__content-link">
+          <a class="content-link" href="./more/Seven-Sistems/index.html">More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider__content">
+      <div class="slider__content-item">
+    <img class="slider-img" src="./images/slider-img-2.jpg" alt="" >
+  </div>
+    <div class="slider__content-text">
+      <h4 class="slider__content-title">
+        Cappadocia
+      </h4>
+      <p class="slider__content-description">
+        Один з моїх перших сайтів. Дизайн знайшов в інтернеті.       </p>
+      <div class="slider__content-link">
+        <a class="content-link" href="./more/Кападокия/index.html">More</a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+</section>
+<section class="anchor__contacts" id="contacts"> </section>
+<section class="contacts">
+  <div class="wrapper">
+    <div class="form">
+      <form action="#" id="form_right" class="form__body">
+        <h1 class="form__title">Залишити заявку</h1>
+        <div class="form__item">
+          <label for="formName" class="form__label">Ім'я*:</label>
+          <input  id="formName"  type="text" name="name" autocomplete="off" class="form__input _req">
+          <label for="formNumber" class="form__label">Номер*:</label>
+          <input  id="formNumber" required min="11" max="13" autocomplete="off" type="tel" name="number" class="form__input _req ">
+          <label for="formMail" class="form__label">Пошта*:</label>
+          <input  id="formMail" required type="email" name="mail" autocomplete="off" class="form__input _req  _email">
+          <p class="ps">якщо ви погоджуєтесь на обробку даних натисніть "Надіслати"</p>
+        </div>
+        <button type="submit" href="" class="form__button" data-show="true">Надіслати</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__inner">
+
+      <ul class="footer__menu">
+        <li class="menu__item"><a class="menu__link" href="#">Головна</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Про мене</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Портфоліо</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Контакти</a></li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="menu__contacts-title"><a class="menu__contacts-title" href="#"></a>Контакти:</li>
+          <li class="menu__contacts"><a class="menu__contacts-link" href="mailto:ruslan.krupenya@gmail.com" target="_blank">Пошта: ruslan.krupenya@gmail.com</a></li>
+          <li class="menu__contacts"><a class="menu__contacts-link" href="https://www.instagram.com/rus.onn/" target="_blank">Інстаграм: rus.onn</a></li>
+          <li class="menu__contacts"><a class="menu__contacts-link" href="tel:380500368958">Зателефонувати: +380 (50) 036 8958</a></li>
+    </ul>
+ 
+<div class="footer__title">
+  <img class="footer__logo" src="images/logo.png" alt="">
+  
+  <a href="#generator" > <img class="footer__back-up" src="./images/back-up.svg" alt=""></a>
+</div>
+  
+  </div>
+</div>
+
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js" integrity="sha512-/n/dTQBO8lHzqqgAQvy0ukBQ0qLmGzxKhn8xKrz4cn7XJkZzy+fAtzjnOQd5w55h4k1kUC+8oIe6WmrGUYwODA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/imask/6.4.3/imask.min.js" integrity="sha512-yJ3vm1HmQtcgeMtbUYCp7PuTLyjU+ffCnVNTuE1Uccv1BmkoaJIXt1EjBVGnscjCILc62hTJJJ2rJJBTcw8RjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/form.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
