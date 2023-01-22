@@ -136,18 +136,25 @@ function sendToTelegram(name, number, email, time) // тут шлем инфо �
       chat_type: "private",
       parse_mode: "HTML"
     }
+    
   })
-  .then(function (response) {
+  .then(function (response)   {
     console.log(response);
-    if(response.data.ok === true){
-      alert("Успішно відправлено")
-    }
+    if(response.data.ok === true)
+    {
+      Swal.fire (
+        'Дякую!',
+        'Повідомлення успішно надіслано 🎉',
+        )
+      }
+
   })
   .catch(function (error) {
     console.log(error);
     alert(error)
   })
   .then(function () {
+    
     // выполняется всегда
   });
 }
@@ -159,7 +166,7 @@ $('.form__button').click(function () {
   }
   else {
       $(this).text("Надіслано");
-      $(this).attr('data-show', "true"); 
+      // $(this).attr('data-show', "true"); 
   }
 });
 
